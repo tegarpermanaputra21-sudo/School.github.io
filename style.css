@@ -311,6 +311,10 @@ h3 {
     cursor: pointer;
     padding: 18px 0;
 }
+.footer a{
+    color: #222;
+    text-decoration: none;
+}
 
 /* ----- Icon ----- */
 .fa-regular, .fa-solid, .fa-brands{
@@ -476,4 +480,5 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 
