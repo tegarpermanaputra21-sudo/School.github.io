@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/761788be2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Eduford/style.css">
+    <link rel="stylesheet" href="/Eduford/aos/aos.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="/Eduford/img/logo.png" alt="logo" class="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <span class="material-symbols-outlined hide-icon" onclick="hideMenu()">close</span>
+                    <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-outlined hide-icon" onclick="showMenu()">menu</span>
+        </nav>
+        <h1 data-aos="fade-down">About Us</h1>
+    </section>
+
+<!------ About us Content ------>
+<section class="about-us" data-aos="zoom-in">
+    <div class="row">
+        <div class="about-col">
+            <h1>World's Biggest University</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corrupti ad omnis amet quam ut ea, quia optio in iste cumque tempora rerum sit neque voluptas tenetur maiores consectetur error?
+            Fugiat excepturi atque cum amet. Nobis nemo illo quod laudantium necessitatibus ad, dolore officia? Cum at, accusamus fuga eos possimus soluta </p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!------ Footer ------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium temporibus <br> quas est tempora similique at perferendis voluptate facilis.</p>
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-user"></i> by Easy Tutorial</p>
+</section>
+
+<!---- JavaScript for Animation on scroll (AOS) ---->
+<script src="/Eduford/aos/aos.js"></script>
+<script>
+    AOS.init ({
+        once: false //true/false
+    })
+</script>
+
+<!---- JavaScript for Toggle menu ---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
